@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+//import components
+@import 
+    './app/components/home-section/home-section.component.scss',
+    './app/components/info-section/info-section.component.scss';
+
+
+
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: $main-font;
+}
+
+h1,
+span,
+a {
+    color: white;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background: #000;
+  }
+body::-webkit-scrollbar-thumb {
+    background: #fff;
+    
+}

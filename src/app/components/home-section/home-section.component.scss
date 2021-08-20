@@ -1,0 +1,35 @@
+// import global styles
+@import 
+    '../../styles/functions/functions',
+    '../../styles/functions/respond',
+    '../../styles/variables/variables';
+
+
+.header-section {
+    width: 100%;
+    height: 100vh;
+    @include center-column();
+    position: relative;
+    background-image: url('../../../assets/imgs/home-img/lsoogGC_5dg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content-container {
+        @include center-column();
+        .home-heading {
+            font-size: 6vw;
+        }
+        .home-heading-content {
+            font-size: 20px;
+            width: 70%;
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+    &__scroll-button-container {
+        position: absolute;
+        bottom: 100px;
+        
+    }
+}
